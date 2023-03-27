@@ -12,6 +12,5 @@ $root.insertAdjacentHTML(
   ${PlayerName("Player 1")}
   ${PlayerName("Player 2")}
   ${BoardGame(6)}
-  
   `
-  )
+)
