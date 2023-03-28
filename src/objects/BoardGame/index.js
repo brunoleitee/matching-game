@@ -1,10 +1,10 @@
-import CardGame from "../../components/CardGame";
+import CardFrontBack from "../../components/CardFrontBack";
 import "./style.css";
 
 const BoardGame = (amountCards) => {
-  const $htmlCardGame = CardGame();
+  const $htmlCardFrontBack = CardFrontBack(6);
   const $htmlContent =          
-  $htmlCardGame.repeat(amountCards)
+  $htmlCardFrontBack.repeat(amountCards)
 
   return /*html*/`
     <section class="board-game">
