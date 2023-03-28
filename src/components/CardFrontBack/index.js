@@ -1,11 +1,15 @@
 import CardGame from '../CardGame/index';
 import "./style.css";
 
-const CardFrontBack = () =>{
+const CardFrontBack = () => {
   return /*html*/ `
     <article class="card-front-back">
-      ${CardGame()}
-      ${CardGame("logo-javascript", "Logo Javascript")}
+      <div class="card -front">
+        ${CardGame()}
+      </div>
+      <div class="card -back">
+        ${CardGame("logo-javascript", "Logo Javascript")}
+      </div>
     </article>
   
   

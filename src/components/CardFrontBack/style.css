@@ -1,5 +1,19 @@
-.card-front-back{
-  margin-bottom: 20px;
-  gap: 20px
-;
+.card-front-back {
+  --width: 130px;
+  --height: 160px;
+  width: var(--width);
+  height: var(--height);
+  position: relative;
+  transform-style: preserve-3d;
+  transition: 4s ease-in-out;
+}
+.card-front-back .-active {
+  transform: rotateY(180deg);
+}
+.card-front-back > .card {
+  position: absolute;
+  backface-visibility: hidden;
+}
+.card-front-back > .card.-back {
+  transform: rotateY(180deg);
 }
