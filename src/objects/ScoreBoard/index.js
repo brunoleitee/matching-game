@@ -1,4 +1,6 @@
 import PlayerName from '../../components/PayerName/index';
+import "./style.css"
+
 const ScoreBoard = () => {
   return /*html*/`
     <header class="score-board">
